@@ -4,7 +4,7 @@ import ChatInput from "./ChatInput";
 import Logout from "./Logout";
 import { v4 as uuidv4 } from "uuid";
 import { sendMessageRoute, recieveMessageRoute } from "../utils/APIRoutes";
-import { axiosInstance } from "../../config";
+import { axiosInstance } from "../config";
 
 export default function ChatContainer({ currentChat, socket }) {
   const [messages, setMessages] = useState([]);

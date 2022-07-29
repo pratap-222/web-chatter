@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { BiPowerOff } from "react-icons/bi";
 import styled from "styled-components";
 import { logoutRoute } from "../utils/APIRoutes";
-import { axiosInstance } from "../../config";
+import { axiosInstance } from "../config";
 
 export default function Logout() {
   const navigate = useNavigate();

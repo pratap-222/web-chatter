@@ -5,7 +5,7 @@ import Logo from "../assets/logo.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/APIRoutes";
-import { axiosInstance } from "../../config";
+import { axiosInstance } from "../config";
 
 export default function Register() {
   const navigate = useNavigate();
