@@ -26,7 +26,7 @@ mongoose
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-pp.use(express.static(path.join(__dirname, "/public/build")));
+app.use(express.static(path.join(__dirname, "/public/build")));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/build', 'index.html'));
